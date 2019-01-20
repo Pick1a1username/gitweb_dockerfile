@@ -37,7 +37,7 @@ $ mkdir repos
 
 ### Run the App
 
-Run the app and browse to `http://localhost:8000`.
+Run the app and browse to `http://localhost:8000/gitweb`.
 
 Note that the data directory should be mounted to `/repos` in the container.
 
