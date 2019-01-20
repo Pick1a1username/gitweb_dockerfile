@@ -9,8 +9,8 @@ ADD ./docker-entrypoint.sh /
 ADD ./gitweb.conf /etc/gitweb.conf
 ADD ./lighttpd.conf /etc/lighttpd/lighttpd.conf
 
-# Expose an HTTP port. SSH will not be used.
+# Expose an HTTP and a SSH port.
 EXPOSE 80
+EXPOSE 22
 
-#ENTRYPOINT ["lighttpd", "-D", "-f", "/etc/lighttpd/lighttpd.conf"]
 ENTRYPOINT ["/docker-entrypoint.sh"]
