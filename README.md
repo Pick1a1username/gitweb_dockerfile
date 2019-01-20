@@ -44,10 +44,6 @@ Note that the data directory should be mounted to `/repos` in the container.
 
 ```
 $ docker run -it --rm  -v <a data directory created above>:/repos -p 8000:80 -p 2222:22 gitweb:0.2
-$ docker run -it --rm gitweb:0.1 \
--v "<a data directory created above>:/repos" \
--p "8000:80" \
--p "2222:22" \
 ```
 
 ## Notes
